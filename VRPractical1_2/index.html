@@ -4,124 +4,898 @@
   </head>
   <body>
     <a-scene>
-      <a-entity class="plain_wall" position="0 0 0" rotation="0 0 0">
-        <a-entity class="plank" position="2 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-        <a-entity class="plank" position="1 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-        <a-entity class="plank" position="0 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-        <a-entity class="plank" position="-1 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-        <a-entity class="plank" position="-2 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-      </a-entity>
+      <a-assets>
+        <img src = "door.png" id = "door">
+        <img src = "garage.jpg" id = "garage">
+        <img src = "wall.png" id = "brick">
+        <img src = "path.jpg" id = "path">
+        <img src = "g.jpg" id = "g">
+        <img src = "f.jpg" id = "f">
+        <img src = "roof.png" id = "r">
+        <img src = "bush.jpg" id = "b">
+        <img src = "steel.jpg" id = "steel">
+        <img src = "grass.jpg" id = "grass">
+        <img src = "Window_PNG_Clip_Art-2592.png" id = "wind">
+        <img src = "road.jpg" id = "road">
+        <img src = "tire.jpg" id = "tire">
+        <img src = "cone.jpg" id = "cone">
+        <img src = "sunset.jpg" id = "sun">
+      </a-assets>
+       <a-entity class="house" position = "0 0 -8">
 
-      <a-entity class="plain_wall" position="0 0 5" rotation="0 0 0">
-        <a-entity class="plank" position="2 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-        <a-entity class="plank" position="1 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-        <a-entity class="plank" position="0 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-        <a-entity class="plank" position="-1 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-        <a-entity class="plank" position="-2 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-      </a-entity>
+            <a-entity class = "car" position="-7 2.1 -5" width = "7" height = "4" depth = "4" rotation = "0 90 0"  color="#4CC3D9">
+      <a-box src = "#steel" position = "0 -.7 0" width = "4" height = "2" depth = "3" color = "#ADD8E6"> </a-box>
+      
+      <a-box position = "-2.5 -.7 0" width = "1.5" height = "1.2" depth = "2.5" color = black> </a-box>
 
-      <a-entity class="plain_wall" position="-2.45 0 2.5" rotation="0 90 0">
-        <a-entity class="plank" position="2 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-        <a-entity class="plank" position="1 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-        <a-entity class="plank" position="0 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-        <a-entity class="plank" position="-1 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-        <a-entity class="plank" position="-2 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-      </a-entity>
+      <a-cylinder src = "#tire" position="1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
 
-      <a-entity class="plain_wall" position="2.45 0 2.5" rotation="0 90 0">
-        <a-entity class="plank" position="2 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+      <a-cylinder src = "#tire" position="1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cone src = "#cone" repeat = "10 2" position ="0 0.8 0" width = "2" height = "1" depth = "-3" color = "orange" > </a-cone>
+
+      <a-cylinder position="-3.2 -1 -.9" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= green></a-cylinder>
+      <a-cylinder position="-3.2 -1 .9" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= green></a-cylinder>
+
+      <a-cylinder src = "#tire" position="2.3 -.4 -.01" rotation = "0 0 90" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder position="2 -1.3 -1.1" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= red></a-cylinder>
+      <a-cylinder position="2 -1.3 1.1" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= red></a-cylinder>
+            </a-entity>
+
+            <a-entity class = "car" position="-7.9 2.1 1.2" width = "7" height = "4" depth = "4" color="#4CC3D9">
+      <a-box src = "#steel" position = "0 -.7 0" width = "4" height = "2" depth = "3" color = "#ADD8E6"> </a-box>
+      
+      <a-box position = "-2.5 -.7 0" width = "1.5" height = "1.2" depth = "2.5" color = "black"> </a-box>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cone src = "#cone" repeat = "10 2" position ="0 0.8 0" width = "2" height = "1" depth = "-3" color = "orange" > </a-cone>
+
+      <a-cylinder position="-3.2 -1 -.9" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= green></a-cylinder>
+      <a-cylinder position="-3.2 -1 .9" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= green></a-cylinder>
+
+      <a-cylinder src = "#tire" position="2.3 -.4 -.01" rotation = "0 0 90" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder position="2 -1.3 -1.1" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= red></a-cylinder>
+      <a-cylinder position="2 -1.3 1.1" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= red></a-cylinder>
+            </a-entity>
+
+            <a-entity class="front wall">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+
+                <a-box src = "#door" width = "2" height = "3" depth = "0.3" position = "0 1.5 0"> </a-box>
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2.5 2 0.05"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2.5 2 0.05"></a-box>
+            </a-entity>
+
+            <a-entity class="right wall" rotation="0 90 0" position="4.45 0 -4.5">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2 2 0.05"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2 2 0.05"></a-box>
+            </a-entity>
+
+            <a-entity class=" left wall" rotation="0 90 0" position="-4.45 0 -4.5">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+                
+            </a-entity>
+
+            <a-entity class="back wall" position="0 0 -9">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+                
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2.5 2 -0.02"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2.5 2 -0.02"></a-box>
+            </a-entity>
+
+        <a-entity class = "roof">
+          <a-box src = "#r" position = "-3 6.25 -4.5" rotation = "0 0 30" width = "7.2" height = "0.5" depth = "9"></a-box>
+          <a-box src = "#r" position = "3 6.25 -4.5" rotation = "0 0 -30" width = "7.2" height = "0.5" depth = "9"></a-box>
         </a-entity>
-        <a-entity class="plank" position="1 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+
+        <a-entity class = "tri">
+          <a-triangle src = "#brick" vertex-a = "-4.6 5 -0.05" vertex-b = "4.6 5 -0.05" vertex-c = "0 8 0" side = "double"></a-triangle>
+          <a-triangle src = "#brick" vertex-a = "-4.8 5 -9" vertex-b = "4.8 5 -9" vertex-c = "0 8 -9" side = "double"></a-triangle>
         </a-entity>
-        <a-entity class="plank" position="0 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+
+        <a-entity class = "garage">
+             <a-entity class="wall" position="-8 0 -1">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#garage" width="6.5" height="3" depth="0.3" position="0 1.5 0" ></a-box>
+              </a-entity>
+
+              <a-entity class="wall" rotation = "0 90 0" position="-11.45 0 -4.5">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 1.5 0" ></a-box>
+              </a-entity>
+
+              <a-entity class="wall" position="-8 0 -8">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 1.5 0" ></a-box>
+
+              </a-entity>
+
         </a-entity>
-        <a-entity class="plank" position="-1 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+
+        <a-entity class = "rgarage">
+          <a-box position = "-8 3.2 -4.5" width = "7.5" height = "0.3" depth = "7" rotation = "0 90 0" color = "black"></a-box>
         </a-entity>
-        <a-entity class="plank" position="-2 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+
+        <a-entity class = "path">
+          <a-box src = "#path" position = "0 0 1.58" width = "1" height = "0.1" depth = "2.82"></a-box>
+          <a-box src = "#g" position = "-8 0 1.1" width = "6.5" height = "0.1" depth = "3.9" color = "gray"></a-box>
+
+          <a-box src = "#f" position = "0 0 -4.5" width = "9" height = "0.1" depth = "8.9"></a-box>
+          <a-box src = "#g" position = "-7.9 0 -4.4" width = "7" height = "0.1" depth = "7.2" color = "gray"></a-box>
         </a-entity>
-      </a-entity>
+
+        <a-entity class = "plants">
+          <a-box position = "-2.5 0 0.5" width = "2" height = "0.5" depth = "1" color = "#9C5917"></a-box>
+          <a-box position = "2.5 0 0.5" width = "2" height = "0.5" depth = "1" color = "#9C5917"></a-box>
+
+          <a-sphere src = "#b" position = "2.5 0.5 0.5" radius = "0.5"> </a-sphere>
+          <a-sphere src = "#b" position = "-2.5 0.5 0.5" radius = "0.5"> </a-sphere>
+        </a-entity>
+
+        <a-entity class = "address">
+          <a-box src = "#f" position = "0 3.5 0" width = "1" height = "0.5" depth = "0.2"></a-box> 
+          <a-text value = "123 Sesame Street" position = "0 3.5 0.1" align = "center" color = "white" width = "2.5"></a-text>
+        </a-entity>
 
 
-      <a-plane position="0 0.1 0" rotation="-90 0 0" width="100" height="10" color= black></a-plane>
+       </a-entity>
+
+       <a-entity class="house" position = "30 0 -8">
+
+            <a-entity class = "car" position="-7 2.1 -5" width = "7" height = "4" depth = "4" rotation = "0 90 0"  color="#4CC3D9">
+      <a-box src = "#steel" position = "0 -.7 0" width = "4" height = "2" depth = "3" color = "#ADD8E6"> </a-box>
+      
+      <a-box position = "-2.5 -.7 0" width = "1.5" height = "1.2" depth = "2.5" color = black> </a-box>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cone src = "#cone" repeat = "10 2" position ="0 0.8 0" width = "2" height = "1" depth = "-3" color = "orange" > </a-cone>
+
+      <a-cylinder position="-3.2 -1 -.9" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= green></a-cylinder>
+      <a-cylinder position="-3.2 -1 .9" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= green></a-cylinder>
+
+      <a-cylinder src = "#tire" position="2.3 -.4 -.01" rotation = "0 0 90" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder position="2 -1.3 -1.1" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= red></a-cylinder>
+      <a-cylinder position="2 -1.3 1.1" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= red></a-cylinder>
+            </a-entity>
+
+            <a-entity class = "car" position="-7.9 2.1 1.2" width = "7" height = "4" depth = "4" color="#4CC3D9">
+      <a-box src = "#steel" position = "0 -.7 0" width = "4" height = "2" depth = "3" color = "#ADD8E6"> </a-box>
+      
+      <a-box position = "-2.5 -.7 0" width = "1.5" height = "1.2" depth = "2.5" color = "black"> </a-box>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cone src = "#cone" repeat = "10 2" position ="0 0.8 0" width = "2" height = "1" depth = "-3" color = "orange" > </a-cone>
+
+      <a-cylinder position="-3.2 -1 -.9" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= green></a-cylinder>
+      <a-cylinder position="-3.2 -1 .9" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= green></a-cylinder>
+
+      <a-cylinder src = "#tire" position="2.3 -.4 -.01" rotation = "0 0 90" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder position="2 -1.3 -1.1" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= red></a-cylinder>
+      <a-cylinder position="2 -1.3 1.1" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= red></a-cylinder>
+            </a-entity>
+
+            <a-entity class="front wall">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+
+                <a-box src = "#door" width = "2" height = "3" depth = "0.3" position = "0 1.5 0"> </a-box>
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2.5 2 0.05"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2.5 2 0.05"></a-box>
+            </a-entity>
+
+            <a-entity class="right wall" rotation="0 90 0" position="4.45 0 -4.5">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2 2 0.05"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2 2 0.05"></a-box>
+            </a-entity>
+
+            <a-entity class=" left wall" rotation="0 90 0" position="-4.45 0 -4.5">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+                
+            </a-entity>
+
+            <a-entity class="back wall" position="0 0 -9">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+                
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2.5 2 -0.02"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2.5 2 -0.02"></a-box>
+            </a-entity>
+
+        <a-entity class = "roof">
+          <a-box src = "#r" position = "-3 6.25 -4.5" rotation = "0 0 30" width = "7.2" height = "0.5" depth = "9"></a-box>
+          <a-box src = "#r" position = "3 6.25 -4.5" rotation = "0 0 -30" width = "7.2" height = "0.5" depth = "9"></a-box>
+        </a-entity>
+
+        <a-entity class = "tri">
+          <a-triangle src = "#brick" vertex-a = "-4.6 5 -0.05" vertex-b = "4.6 5 -0.05" vertex-c = "0 8 0" side = "double"></a-triangle>
+          <a-triangle src = "#brick" vertex-a = "-4.8 5 -9" vertex-b = "4.8 5 -9" vertex-c = "0 8 -9" side = "double"></a-triangle>
+        </a-entity>
+
+        <a-entity class = "garage">
+             <a-entity class="wall" position="-8 0 -1">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#garage" width="6.5" height="3" depth="0.3" position="0 1.5 0" ></a-box>
+              </a-entity>
+
+              <a-entity class="wall" rotation = "0 90 0" position="-11.45 0 -4.5">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 1.5 0" ></a-box>
+              </a-entity>
+
+              <a-entity class="wall" position="-8 0 -8">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 1.5 0" ></a-box>
+
+              </a-entity>
+
+        </a-entity>
+
+        <a-entity class = "rgarage">
+          <a-box position = "-8 3.2 -4.5" width = "7.5" height = "0.3" depth = "7" rotation = "0 90 0" color = "black"></a-box>
+        </a-entity>
+
+        <a-entity class = "path">
+          <a-box src = "#path" position = "0 0 1.58" width = "1" height = "0.1" depth = "2.82"></a-box>
+          <a-box src = "#g" position = "-8 0 1.1" width = "6.5" height = "0.1" depth = "3.9" color = "gray"></a-box>
+
+          <a-box src = "#f" position = "0 0 -4.5" width = "9" height = "0.1" depth = "8.9"></a-box>
+          <a-box src = "#g" position = "-7.9 0 -4.4" width = "7" height = "0.1" depth = "7.2" color = "gray"></a-box>
+        </a-entity>
+
+        <a-entity class = "plants">
+          <a-box position = "-2.5 0 0.5" width = "2" height = "0.5" depth = "1" color = "#9C5917"></a-box>
+          <a-box position = "2.5 0 0.5" width = "2" height = "0.5" depth = "1" color = "#9C5917"></a-box>
+
+          <a-sphere src = "#b" position = "2.5 0.5 0.5" radius = "0.5"> </a-sphere>
+          <a-sphere src = "#b" position = "-2.5 0.5 0.5" radius = "0.5"> </a-sphere>
+        </a-entity>
+
+        <a-entity class = "address">
+          <a-box src = "#f" position = "0 3.5 0" width = "1" height = "0.5" depth = "0.2"></a-box> 
+          <a-text value = "124 Sesame Street" position = "0 3.5 0.1" align = "center" color = "white" width = "2.5"></a-text>
+        </a-entity>
 
 
-      <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+       </a-entity>
+
+       <a-entity class="house" position = "-30 0 -8">
+
+            <a-entity class = "car" position="-7 2.1 -5" width = "7" height = "4" depth = "4" rotation = "0 90 0"  color="#4CC3D9">
+      <a-box src = "#steel" position = "0 -.7 0" width = "4" height = "2" depth = "3" color = "#ADD8E6"> </a-box>
+      
+      <a-box position = "-2.5 -.7 0" width = "1.5" height = "1.2" depth = "2.5" color = black> </a-box>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cone src = "#cone" repeat = "10 2" position ="0 0.8 0" width = "2" height = "1" depth = "-3" color = "orange" > </a-cone>
+
+      <a-cylinder position="-3.2 -1 -.9" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= green></a-cylinder>
+      <a-cylinder position="-3.2 -1 .9" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= green></a-cylinder>
+
+      <a-cylinder src = "#tire" position="2.3 -.4 -.01" rotation = "0 0 90" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder position="2 -1.3 -1.1" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= red></a-cylinder>
+      <a-cylinder position="2 -1.3 1.1" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= red></a-cylinder>
+            </a-entity>
+
+            <a-entity class = "car" position="-7.9 2.1 1.2" width = "7" height = "4" depth = "4" color="#4CC3D9">
+      <a-box src = "#steel" position = "0 -.7 0" width = "4" height = "2" depth = "3" color = "#ADD8E6"> </a-box>
+      
+      <a-box position = "-2.5 -.7 0" width = "1.5" height = "1.2" depth = "2.5" color = "black"> </a-box>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cone src = "#cone" repeat = "10 2" position ="0 0.8 0" width = "2" height = "1" depth = "-3" color = "orange" > </a-cone>
+
+      <a-cylinder position="-3.2 -1 -.9" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= green></a-cylinder>
+      <a-cylinder position="-3.2 -1 .9" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= green></a-cylinder>
+
+      <a-cylinder src = "#tire" position="2.3 -.4 -.01" rotation = "0 0 90" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder position="2 -1.3 -1.1" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= red></a-cylinder>
+      <a-cylinder position="2 -1.3 1.1" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= red></a-cylinder>
+            </a-entity>
+
+            <a-entity class="front wall">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+
+                <a-box src = "#door" width = "2" height = "3" depth = "0.3" position = "0 1.5 0"> </a-box>
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2.5 2 0.05"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2.5 2 0.05"></a-box>
+            </a-entity>
+
+            <a-entity class="right wall" rotation="0 90 0" position="4.45 0 -4.5">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2 2 0.05"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2 2 0.05"></a-box>
+            </a-entity>
+
+            <a-entity class=" left wall" rotation="0 90 0" position="-4.45 0 -4.5">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+                
+            </a-entity>
+
+            <a-entity class="back wall" position="0 0 -9">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+                
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2.5 2 -0.02"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2.5 2 -0.02"></a-box>
+            </a-entity>
+
+        <a-entity class = "roof">
+          <a-box src = "#r" position = "-3 6.25 -4.5" rotation = "0 0 30" width = "7.2" height = "0.5" depth = "9"></a-box>
+          <a-box src = "#r" position = "3 6.25 -4.5" rotation = "0 0 -30" width = "7.2" height = "0.5" depth = "9"></a-box>
+        </a-entity>
+
+        <a-entity class = "tri">
+          <a-triangle src = "#brick" vertex-a = "-4.6 5 -0.05" vertex-b = "4.6 5 -0.05" vertex-c = "0 8 0" side = "double"></a-triangle>
+          <a-triangle src = "#brick" vertex-a = "-4.8 5 -9" vertex-b = "4.8 5 -9" vertex-c = "0 8 -9" side = "double"></a-triangle>
+        </a-entity>
+
+        <a-entity class = "garage">
+             <a-entity class="wall" position="-8 0 -1">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#garage" width="6.5" height="3" depth="0.3" position="0 1.5 0" ></a-box>
+              </a-entity>
+
+              <a-entity class="wall" rotation = "0 90 0" position="-11.45 0 -4.5">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 1.5 0" ></a-box>
+              </a-entity>
+
+              <a-entity class="wall" position="-8 0 -8">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 1.5 0" ></a-box>
+
+              </a-entity>
+
+        </a-entity>
+
+        <a-entity class = "rgarage">
+          <a-box position = "-8 3.2 -4.5" width = "7.5" height = "0.3" depth = "7" rotation = "0 90 0" color = "black"></a-box>
+        </a-entity>
+
+        <a-entity class = "path">
+          <a-box src = "#path" position = "0 0 1.58" width = "1" height = "0.1" depth = "2.82"></a-box>
+          <a-box src = "#g" position = "-8 0 1.1" width = "6.5" height = "0.1" depth = "3.9" color = "gray"></a-box>
+
+          <a-box src = "#f" position = "0 0 -4.5" width = "9" height = "0.1" depth = "8.9"></a-box>
+          <a-box src = "#g" position = "-7.9 0 -4.4" width = "7" height = "0.1" depth = "7.2" color = "gray"></a-box>
+        </a-entity>
+
+        <a-entity class = "plants">
+          <a-box position = "-2.5 0 0.5" width = "2" height = "0.5" depth = "1" color = "#9C5917"></a-box>
+          <a-box position = "2.5 0 0.5" width = "2" height = "0.5" depth = "1" color = "#9C5917"></a-box>
+
+          <a-sphere src = "#b" position = "2.5 0.5 0.5" radius = "0.5"> </a-sphere>
+          <a-sphere src = "#b" position = "-2.5 0.5 0.5" radius = "0.5"> </a-sphere>
+        </a-entity>
+
+        <a-entity class = "address">
+          <a-box src = "#f" position = "0 3.5 0" width = "1" height = "0.5" depth = "0.2"></a-box> 
+          <a-text value = "122 Sesame Street" position = "0 3.5 0.1" align = "center" color = "white" width = "2.5"></a-text>
+        </a-entity>
+
+
+       </a-entity>
+
+       <a-entity class="house" position = "30 0 8" rotation = "0 180 0">
+
+            <a-entity class = "car" position="-7 2.1 -5" width = "7" height = "4" depth = "4" rotation = "0 90 0"  color="#4CC3D9">
+      <a-box src = "#steel" position = "0 -.7 0" width = "4" height = "2" depth = "3" color = "#ADD8E6"> </a-box>
+      
+      <a-box position = "-2.5 -.7 0" width = "1.5" height = "1.2" depth = "2.5" color = black> </a-box>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cone src = "#cone" repeat = "10 2" position ="0 0.8 0" width = "2" height = "1" depth = "-3" color = "orange" > </a-cone>
+
+      <a-cylinder position="-3.2 -1 -.9" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= green></a-cylinder>
+      <a-cylinder position="-3.2 -1 .9" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= green></a-cylinder>
+
+      <a-cylinder src = "#tire" position="2.3 -.4 -.01" rotation = "0 0 90" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder position="2 -1.3 -1.1" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= red></a-cylinder>
+      <a-cylinder position="2 -1.3 1.1" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= red></a-cylinder>
+            </a-entity>
+
+            <a-entity class = "car" position="-7.9 2.1 1.2" width = "7" height = "4" depth = "4" color="#4CC3D9">
+      <a-box src = "#steel" position = "0 -.7 0" width = "4" height = "2" depth = "3" color = "#ADD8E6"> </a-box>
+      
+      <a-box position = "-2.5 -.7 0" width = "1.5" height = "1.2" depth = "2.5" color = "black"> </a-box>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cone src = "#cone" repeat = "10 2" position ="0 0.8 0" width = "2" height = "1" depth = "-3" color = "orange" > </a-cone>
+
+      <a-cylinder position="-3.2 -1 -.9" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= green></a-cylinder>
+      <a-cylinder position="-3.2 -1 .9" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= green></a-cylinder>
+
+      <a-cylinder src = "#tire" position="2.3 -.4 -.01" rotation = "0 0 90" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder position="2 -1.3 -1.1" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= red></a-cylinder>
+      <a-cylinder position="2 -1.3 1.1" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= red></a-cylinder>
+            </a-entity>
+
+            <a-entity class="front wall">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+
+                <a-box src = "#door" width = "2" height = "3" depth = "0.3" position = "0 1.5 0"> </a-box>
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2.5 2 0.05"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2.5 2 0.05"></a-box>
+            </a-entity>
+
+            <a-entity class="right wall" rotation="0 90 0" position="4.45 0 -4.5">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2 2 0.05"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2 2 0.05"></a-box>
+            </a-entity>
+
+            <a-entity class=" left wall" rotation="0 90 0" position="-4.45 0 -4.5">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+                
+            </a-entity>
+
+            <a-entity class="back wall" position="0 0 -9">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+                
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2.5 2 -0.02"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2.5 2 -0.02"></a-box>
+            </a-entity>
+
+        <a-entity class = "roof">
+          <a-box src = "#r" position = "-3 6.25 -4.5" rotation = "0 0 30" width = "7.2" height = "0.5" depth = "9"></a-box>
+          <a-box src = "#r" position = "3 6.25 -4.5" rotation = "0 0 -30" width = "7.2" height = "0.5" depth = "9"></a-box>
+        </a-entity>
+
+        <a-entity class = "tri">
+          <a-triangle src = "#brick" vertex-a = "-4.6 5 -0.05" vertex-b = "4.6 5 -0.05" vertex-c = "0 8 0" side = "double"></a-triangle>
+          <a-triangle src = "#brick" vertex-a = "-4.8 5 -9" vertex-b = "4.8 5 -9" vertex-c = "0 8 -9" side = "double"></a-triangle>
+        </a-entity>
+
+        <a-entity class = "garage">
+             <a-entity class="wall" position="-8 0 -1">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#garage" width="6.5" height="3" depth="0.3" position="0 1.5 0" ></a-box>
+              </a-entity>
+
+              <a-entity class="wall" rotation = "0 90 0" position="-11.45 0 -4.5">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 1.5 0" ></a-box>
+              </a-entity>
+
+              <a-entity class="wall" position="-8 0 -8">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 1.5 0" ></a-box>
+
+              </a-entity>
+
+        </a-entity>
+
+        <a-entity class = "rgarage">
+          <a-box position = "-8 3.2 -4.5" width = "7.5" height = "0.3" depth = "7" rotation = "0 90 0" color = "black"></a-box>
+        </a-entity>
+
+        <a-entity class = "path">
+          <a-box src = "#path" position = "0 0 1.58" width = "1" height = "0.1" depth = "2.82"></a-box>
+          <a-box src = "#g" position = "-8 0 1.1" width = "6.5" height = "0.1" depth = "3.9" color = "gray"></a-box>
+
+          <a-box src = "#f" position = "0 0 -4.5" width = "9" height = "0.1" depth = "8.9"></a-box>
+          <a-box src = "#g" position = "-7.9 0 -4.4" width = "7" height = "0.1" depth = "7.2" color = "gray"></a-box>
+        </a-entity>
+
+        <a-entity class = "plants">
+          <a-box position = "-2.5 0 0.5" width = "2" height = "0.5" depth = "1" color = "#9C5917"></a-box>
+          <a-box position = "2.5 0 0.5" width = "2" height = "0.5" depth = "1" color = "#9C5917"></a-box>
+
+          <a-sphere src = "#b" position = "2.5 0.5 0.5" radius = "0.5"> </a-sphere>
+          <a-sphere src = "#b" position = "-2.5 0.5 0.5" radius = "0.5"> </a-sphere>
+        </a-entity>
+
+        <a-entity class = "address">
+          <a-box src = "#f" position = "0 3.5 0" width = "1" height = "0.5" depth = "0.2"></a-box> 
+          <a-text value = "124 Sesame Street" position = "0 3.5 0.1" align = "center" color = "white" width = "2.5"></a-text>
+        </a-entity>
+
+
+       </a-entity>
+
+       <a-entity class="house" position = "0 0 8" rotation = "0 180 0">
+
+            <a-entity class = "car" position="-7 2.1 -5" width = "7" height = "4" depth = "4" rotation = "0 90 0"  color="#4CC3D9">
+      <a-box src = "#steel" position = "0 -.7 0" width = "4" height = "2" depth = "3" color = "#ADD8E6"> </a-box>
+      
+      <a-box position = "-2.5 -.7 0" width = "1.5" height = "1.2" depth = "2.5" color = black> </a-box>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cone src = "#cone" repeat = "10 2" position ="0 0.8 0" width = "2" height = "1" depth = "-3" color = "orange" > </a-cone>
+
+      <a-cylinder position="-3.2 -1 -.9" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= green></a-cylinder>
+      <a-cylinder position="-3.2 -1 .9" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= green></a-cylinder>
+
+      <a-cylinder src = "#tire" position="2.3 -.4 -.01" rotation = "0 0 90" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder position="2 -1.3 -1.1" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= red></a-cylinder>
+      <a-cylinder position="2 -1.3 1.1" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= red></a-cylinder>
+            </a-entity>
+
+            <a-entity class = "car" position="-7.9 2.1 1.2" width = "7" height = "4" depth = "4" color="#4CC3D9">
+      <a-box src = "#steel" position = "0 -.7 0" width = "4" height = "2" depth = "3" color = "#ADD8E6"> </a-box>
+      
+      <a-box position = "-2.5 -.7 0" width = "1.5" height = "1.2" depth = "2.5" color = "black"> </a-box>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cone src = "#cone" repeat = "10 2" position ="0 0.8 0" width = "2" height = "1" depth = "-3" color = "orange" > </a-cone>
+
+      <a-cylinder position="-3.2 -1 -.9" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= green></a-cylinder>
+      <a-cylinder position="-3.2 -1 .9" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= green></a-cylinder>
+
+      <a-cylinder src = "#tire" position="2.3 -.4 -.01" rotation = "0 0 90" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder position="2 -1.3 -1.1" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= red></a-cylinder>
+      <a-cylinder position="2 -1.3 1.1" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= red></a-cylinder>
+            </a-entity>
+
+            <a-entity class="front wall">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+
+                <a-box src = "#door" width = "2" height = "3" depth = "0.3" position = "0 1.5 0"> </a-box>
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2.5 2 0.05"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2.5 2 0.05"></a-box>
+            </a-entity>
+
+            <a-entity class="right wall" rotation="0 90 0" position="4.45 0 -4.5">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2 2 0.05"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2 2 0.05"></a-box>
+            </a-entity>
+
+            <a-entity class=" left wall" rotation="0 90 0" position="-4.45 0 -4.5">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+                
+            </a-entity>
+
+            <a-entity class="back wall" position="0 0 -9">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+                
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2.5 2 -0.02"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2.5 2 -0.02"></a-box>
+            </a-entity>
+
+        <a-entity class = "roof">
+          <a-box src = "#r" position = "-3 6.25 -4.5" rotation = "0 0 30" width = "7.2" height = "0.5" depth = "9"></a-box>
+          <a-box src = "#r" position = "3 6.25 -4.5" rotation = "0 0 -30" width = "7.2" height = "0.5" depth = "9"></a-box>
+        </a-entity>
+
+        <a-entity class = "tri">
+          <a-triangle src = "#brick" vertex-a = "-4.6 5 -0.05" vertex-b = "4.6 5 -0.05" vertex-c = "0 8 0" side = "double"></a-triangle>
+          <a-triangle src = "#brick" vertex-a = "-4.8 5 -9" vertex-b = "4.8 5 -9" vertex-c = "0 8 -9" side = "double"></a-triangle>
+        </a-entity>
+
+        <a-entity class = "garage">
+             <a-entity class="wall" position="-8 0 -1">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#garage" width="6.5" height="3" depth="0.3" position="0 1.5 0" ></a-box>
+              </a-entity>
+
+              <a-entity class="wall" rotation = "0 90 0" position="-11.45 0 -4.5">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 1.5 0" ></a-box>
+              </a-entity>
+
+              <a-entity class="wall" position="-8 0 -8">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 1.5 0" ></a-box>
+
+              </a-entity>
+
+        </a-entity>
+
+        <a-entity class = "rgarage">
+          <a-box position = "-8 3.2 -4.5" width = "7.5" height = "0.3" depth = "7" rotation = "0 90 0" color = "black"></a-box>
+        </a-entity>
+
+        <a-entity class = "path">
+          <a-box src = "#path" position = "0 0 1.58" width = "1" height = "0.1" depth = "2.82"></a-box>
+          <a-box src = "#g" position = "-8 0 1.1" width = "6.5" height = "0.1" depth = "3.9" color = "gray"></a-box>
+
+          <a-box src = "#f" position = "0 0 -4.5" width = "9" height = "0.1" depth = "8.9"></a-box>
+          <a-box src = "#g" position = "-7.9 0 -4.4" width = "7" height = "0.1" depth = "7.2" color = "gray"></a-box>
+        </a-entity>
+
+        <a-entity class = "plants">
+          <a-box position = "-2.5 0 0.5" width = "2" height = "0.5" depth = "1" color = "#9C5917"></a-box>
+          <a-box position = "2.5 0 0.5" width = "2" height = "0.5" depth = "1" color = "#9C5917"></a-box>
+
+          <a-sphere src = "#b" position = "2.5 0.5 0.5" radius = "0.5"> </a-sphere>
+          <a-sphere src = "#b" position = "-2.5 0.5 0.5" radius = "0.5"> </a-sphere>
+        </a-entity>
+
+        <a-entity class = "address">
+          <a-box src = "#f" position = "0 3.5 0" width = "1" height = "0.5" depth = "0.2"></a-box> 
+          <a-text value = "123 Sesame Street" position = "0 3.5 0.1" align = "center" color = "white" width = "2.5"></a-text>
+        </a-entity>
+
+
+       </a-entity>
+
+       <a-entity class="house" position = "-30 0 8" rotation = "0 180 0">
+
+            <a-entity class = "car" position="-7 2.1 -5" width = "7" height = "4" depth = "4" rotation = "0 90 0"  color="#4CC3D9">
+      <a-box src = "#steel" position = "0 -.7 0" width = "4" height = "2" depth = "3" color = "#ADD8E6"> </a-box>
+      
+      <a-box position = "-2.5 -.7 0" width = "1.5" height = "1.2" depth = "2.5" color = black> </a-box>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cone src = "#cone" repeat = "10 2" position ="0 0.8 0" width = "2" height = "1" depth = "-3" color = "orange" > </a-cone>
+
+      <a-cylinder position="-3.2 -1 -.9" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= green></a-cylinder>
+      <a-cylinder position="-3.2 -1 .9" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= green></a-cylinder>
+
+      <a-cylinder src = "#tire" position="2.3 -.4 -.01" rotation = "0 0 90" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder position="2 -1.3 -1.1" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= red></a-cylinder>
+      <a-cylinder position="2 -1.3 1.1" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= red></a-cylinder>
+            </a-entity>
+
+            <a-entity class = "car" position="-7.9 2.1 1.2" width = "7" height = "4" depth = "4" color="#4CC3D9">
+      <a-box src = "#steel" position = "0 -.7 0" width = "4" height = "2" depth = "3" color = "#ADD8E6"> </a-box>
+      
+      <a-box position = "-2.5 -.7 0" width = "1.5" height = "1.2" depth = "2.5" color = "black"> </a-box>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder src = "#tire" position="1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+      <a-cylinder src = "#tire" position="-1.2 -1.5 -1.5" rotation = "90 0 0" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cone src = "#cone" repeat = "10 2" position ="0 0.8 0" width = "2" height = "1" depth = "-3" color = "orange" > </a-cone>
+
+      <a-cylinder position="-3.2 -1 -.9" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= green></a-cylinder>
+      <a-cylinder position="-3.2 -1 .9" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= green></a-cylinder>
+
+      <a-cylinder src = "#tire" position="2.3 -.4 -.01" rotation = "0 0 90" radius="0.5" width = "1" height="0.5" color="white"></a-cylinder>
+
+      <a-cylinder position="2 -1.3 -1.1" rotation = "0 0 90" radius="0.3" width = "0.5" height="0.5" color= red></a-cylinder>
+      <a-cylinder position="2 -1.3 1.1" rotation = "0 0 90" radius="0.3" width = ".5" height="0.5" color= red></a-cylinder>
+            </a-entity>
+
+            <a-entity class="front wall">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+
+                <a-box src = "#door" width = "2" height = "3" depth = "0.3" position = "0 1.5 0"> </a-box>
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2.5 2 0.05"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2.5 2 0.05"></a-box>
+            </a-entity>
+
+            <a-entity class="right wall" rotation="0 90 0" position="4.45 0 -4.5">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2 2 0.05"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2 2 0.05"></a-box>
+            </a-entity>
+
+            <a-entity class=" left wall" rotation="0 90 0" position="-4.45 0 -4.5">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+                
+            </a-entity>
+
+            <a-entity class="back wall" position="0 0 -9">
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="5" height="7" depth="0.1" position="2 1.5 0" ></a-box>
+                
+
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "-2.5 2 -0.02"></a-box>
+                <a-box src = "#wind" width = "1.5" height = "1.5" depth = "0.3" opacity = "0.9" position = "2.5 2 -0.02"></a-box>
+            </a-entity>
+
+        <a-entity class = "roof">
+          <a-box src = "#r" position = "-3 6.25 -4.5" rotation = "0 0 30" width = "7.2" height = "0.5" depth = "9"></a-box>
+          <a-box src = "#r" position = "3 6.25 -4.5" rotation = "0 0 -30" width = "7.2" height = "0.5" depth = "9"></a-box>
+        </a-entity>
+
+        <a-entity class = "tri">
+          <a-triangle src = "#brick" vertex-a = "-4.6 5 -0.05" vertex-b = "4.6 5 -0.05" vertex-c = "0 8 0" side = "double"></a-triangle>
+          <a-triangle src = "#brick" vertex-a = "-4.8 5 -9" vertex-b = "4.8 5 -9" vertex-c = "0 8 -9" side = "double"></a-triangle>
+        </a-entity>
+
+        <a-entity class = "garage">
+             <a-entity class="wall" position="-8 0 -1">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#garage" width="6.5" height="3" depth="0.3" position="0 1.5 0" ></a-box>
+              </a-entity>
+
+              <a-entity class="wall" rotation = "0 90 0" position="-11.45 0 -4.5">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 1.5 0" ></a-box>
+              </a-entity>
+
+              <a-entity class="wall" position="-8 0 -8">
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="-2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="3" depth="0.1" position="2 1.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 0.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 2.5 0" ></a-box>
+                <a-box src = "#brick" width="3" height="1" depth="0.1" position="0 1.5 0" ></a-box>
+
+              </a-entity>
+
+        </a-entity>
+
+        <a-entity class = "rgarage">
+          <a-box position = "-8 3.2 -4.5" width = "7.5" height = "0.3" depth = "7" rotation = "0 90 0" color = "black"></a-box>
+        </a-entity>
+
+        <a-entity class = "path">
+          <a-box src = "#path" position = "0 0 1.58" width = "1" height = "0.1" depth = "2.82"></a-box>
+          <a-box src = "#g" position = "-8 0 1.1" width = "6.5" height = "0.1" depth = "3.9" color = "gray"></a-box>
+
+          <a-box src = "#f" position = "0 0 -4.5" width = "9" height = "0.1" depth = "8.9"></a-box>
+          <a-box src = "#g" position = "-7.9 0 -4.4" width = "7" height = "0.1" depth = "7.2" color = "gray"></a-box>
+        </a-entity>
+
+        <a-entity class = "plants">
+          <a-box position = "-2.5 0 0.5" width = "2" height = "0.5" depth = "1" color = "#9C5917"></a-box>
+          <a-box position = "2.5 0 0.5" width = "2" height = "0.5" depth = "1" color = "#9C5917"></a-box>
+
+          <a-sphere src = "#b" position = "2.5 0.5 0.5" radius = "0.5"> </a-sphere>
+          <a-sphere src = "#b" position = "-2.5 0.5 0.5" radius = "0.5"> </a-sphere>
+        </a-entity>
+
+        <a-entity class = "address">
+          <a-box src = "#f" position = "0 3.5 0" width = "1" height = "0.5" depth = "0.2"></a-box> 
+          <a-text value = "122 Sesame Street" position = "0 3.5 0.1" align = "center" color = "white" width = "2.5"></a-text>
+        </a-entity>
+
+
+       </a-entity>
+
+      <a-plane src = "#road" repeat = "10" position="0 0.01 0" rotation="-90 0 0" width="100" height="10" depth = "10"></a-plane>
+
+
+      <a-plane src = "#grass" repeat = "10 10" position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#7BC8A4"></a-plane>
+      <a-sky src = "#sun" color="#ECECEC"></a-sky>
       <a-camera position="0 1.4 5"></a-camera>
     </a-scene>
   </body>
