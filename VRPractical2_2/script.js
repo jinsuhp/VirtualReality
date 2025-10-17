@@ -45,6 +45,6 @@ function loop(){
     dude.setAttribute("scale", {x:dude.s,y:dude.s,z:dude.s});
 
     sun.s += sun.sg;
-    sun.setAttribute("opacity", sun.s)
+    sun.setAttribute("opacity", sun.s);
   window.requestAnimationFrame(loop);
 }
