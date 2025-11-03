@@ -4,7 +4,8 @@ class Dude{
     this.y = y;
     this.z = z;
     //Challenge 1: Add delta variables in order to make the dude walk forward on the z axis and jump up and down on the y axis.
-
+    this.z -= this.dz;
+    this.y += this.dy;
     this.obj = dudeTemplate.cloneNode(true);
     this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
     scene.append(this.obj);

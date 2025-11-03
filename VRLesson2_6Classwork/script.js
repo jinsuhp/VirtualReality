@@ -1,4 +1,4 @@
-let scene;
+let scene, mech;
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");

@@ -1,5 +1,5 @@
 let rnd = (l,u) => Math.floor(Math.random()*(u-l) + l);
-let scene, rockets = [];
+let scene, rockets = [], ufos = [];
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene"); 
@@ -12,7 +12,13 @@ window.addEventListener("DOMContentLoaded",function() {
       rockets.push(rocket);
     }
 
-
+    for(let i = 0; i < 100; i++){
+      let x = rnd(-100,100);
+      let y = rnd(30,45);
+      let z = rnd(-100,100);
+      let ufo = new UFO(x,y,z);
+      ufos.push(ufo);
+    }
   loop();
 });
 
@@ -21,6 +27,9 @@ function loop(){
     rocket.launch()
   }
 
-
+  for(let ufo of ufos){
+    ufo.invade()
+  }
+ 
   window.requestAnimationFrame( loop );
 }
