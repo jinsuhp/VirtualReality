@@ -1,16 +1,16 @@
 let maze = [
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
+  "xxxxxxxxxxxxxxxxxxxx",
+  "xoooooooooooooooooox",
+  "xoTTTTTTTTTTTTTTTTox",
+  "xoTooooooooooooooTox",
+  "xoToTTTTTTTTTTTToTox",
+  "xoToTooooooooooToTox",
+  "xoToTooooooooooToTox",
+  "xoToTTTTTTTTTTTToTox",
+  "xoTooooooooooooooTox",
+  "xoTTTTTTTTTTTTTTTTox",
+  "xoooooooooooooooooox",
+  "xxxxxxxxxxxxxxxxxxxx",
 ];
 let scene;
 
@@ -27,8 +27,8 @@ window.addEventListener("DOMContentLoaded",function() {
         new Tree(c,1,r);
       }else if(cols[c]=="o"){
         new Rock(c,1,r)
-      }
     }
+  }
 
   }
 
