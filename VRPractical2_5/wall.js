@@ -4,6 +4,9 @@ class Wall{
         this.y = y;
         this.z = z;
 
-        this.obj
+        this.obj = document.createElement("a-box");
+        this.obj.setAttribute("position",{x:x,y:y,z:z});
+        this.obj.setAttribute("src", "#vines");
+        scene.append(this.obj);
     }
 }

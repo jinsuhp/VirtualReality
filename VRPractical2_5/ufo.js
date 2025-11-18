@@ -3,10 +3,11 @@ class UFO{
         this.x = x;
         this.y = y;
         this.z = z;
-        this.dy = rnd(1,4) /20 ; 
+        this.dy = rnd(1,2) /20 ; 
 
         this.obj = document.createElement("a-entity");
-
+        this.obj.setAttribute("scale", "0.5 0.5 0.5");
+        
         let base = document.createElement("a-torus");
         base.setAttribute("position", "0 1 -3");
         base.setAttribute("rotation","90 0 0");
@@ -43,10 +44,16 @@ class UFO{
         scene.append(this.obj);
     }
     invade(){
-        this.y -= this.dy;
+        this.y += this.dy;
         this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
-        if(this.y < 0){
-          this.y = 0;  
+
+    if(this.y > 7){
+        this.y = 7;
+        this.dy = -this.dy;
+
+    }else if(this.y < 1){
+        this.y = 1;
+        this.dy = -this.dy;
     }
     }
     
