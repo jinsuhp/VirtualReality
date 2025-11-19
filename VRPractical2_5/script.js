@@ -11,50 +11,51 @@
 */
 let rnd = (l,u) => Math.floor(Math.random()*(u-l) + l);
 let maze = [
-  "xx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", // Entrance at top-left
-  "x---x---uxxxxx------------------x",
-  "x---x-xxx------xxxxxxx-x--------x",
-  "x---x-x-x------x-----x-x--------x",
-  "x-u-x-x-x------x-----x-x--------x",
-  "x---x-x-x------x-----x-x--------x",
-  "x---x-x-xxx----x-----xxx--------x",
-  "x--------x----------------------x",
-  "x-----u--x---xxx----------------x",
-  "x--------x----------------------x",
-  "x--------x------u---------------x",  
-  "x---xxx--x----------------------x",    
-  "x---x----x----------------------x",
-  "x---x----x-----xxx--------------x",
-  "x---x----x----------------------x",
-  "x---x----x----------------------x",
-  "x---x----x---------------u------x",
-  "x---x----x--------u-------------x",
-  "x--------x----------------------x",
-  "x--------x----------------------x",
-  "x--------xxx-----------u--------x",
-  "x-------------------------------x",
-  "x-----u-------------------------x",
-  "x----------u----xxxxxxx---------x",
-  "x-------------------u-----------x",
-  "x-------------------------------x",
-  "x------------u-------xxxx-------x",
-  "x-------------------------------x",
-  "x-------------------------------x",
-  "x-------------------------------x",
-  "x-------xxxxxxxxxxx------uxxx---x",
-  "x-------------------------------x",
-  "x------xxxxxxxxxxx--u--xxxxxxxx-x",
-  "x-------------------------------x",
-  "x---xx-----xxxxxxxxxxxxxxxx--x--x",
-  "x------xxxx---------------------x",
-  "xxxxxxxxxxxxxx--xxxxxxxxxxxxxxxxx"
+  "xx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", 
+  "xx------------------------------x",
+  "xx--xxxxx---xxxxxxxxxx-x--xxxxx-x",
+  "xx--x-x-x-xu--xxxxxxx--x--xxxxx-x",
+  "xxu-x-x-x-xxx--xxxxx---x--xxxxx-x",
+  "xx--x-x-x------xxxx--x-x---xxx--x",
+  "xx--x---xxxxxxxxxxx--xxxxxxxxxxxx",
+  "xx-------xxxxxxxxxx--xxxxxxxxxxxx",
+  "xxxxxxu--xxxxxxxxxx--xxxxxxxxxxxx",
+  "xxxxxxxx-xxxxxxx--------------xxx",
+  "xxxxxxxx---xxxx-u-xxxxxxxxxxxuxxx",  
+  "xxxxxxxxxx-xxxx---xxxxxxxxxx--xxx",    
+  "x-----xxxx-xxx----xxxxxxxxxx--xxx",
+  "x--xx-xxxx-xxx-xxxxxx--xxxxx--xxx",
+  "x--xx-xxxx-xx-----xxx--xxxxx--xxx",
+  "x--xx-xxxx----uxx-xxx--xxxxx--xxx",
+  "x--xx-xxxx---xxxx-xxx---------xxx",
+  "x--xx-xxxx---xxxx-xxx--xxxx--xxxx",
+  "x-uxx-xxxx---xxxx-xxx--xxxxxuxxxx",
+  "x--xx-xxxx---xxxxxxxxx-xxxxx-xxxx",
+  "x--xx-xxxx---xxxxxxxxxuxxxxx-xxxx",
+  "x--xx-xxxx---------xxx-xxxxx-xxxx",
+  "x--xxuxxxx---xxxxxxx---xxxxx-xxxx",
+  "x--xx-xxxx-uxxxxxxxx-xxxxxxx-xxxx",
+  "x--xx-xxxx-xxxxxxxxxuxxxxxxx--xxx",
+  "x--xx-xxxx-xxxxxxxxx------xxx-xxx",
+  "x-----------xxxxx----xxxx-xxx-xxx",
+  "xxxx-xxxxxx-xxxxxxxxxxxxx------xx",
+  "x---uxxxxxx-xxxxxxxxxx----xxxxxxx",
+  "x--xxxxxxxx-xxxxxxxxxx----xxxxxxx",
+  "x--xxxxxxxx-xxxxxxxxxx-x-uxxxxxxx",
+  "x------xxxx--xxxxxxx------------x",
+  "xxxxx--xxxxxxxxxxxxx-u-xxxxxxx--x",
+  "x------xxxxxxxxxxxxx--------xx--x",
+  "x-xxxxxxxxxxxxxxxxxxxxxxxxx-xx--x",
+  "x------xxxx-----------------xxxxx",
+  "xxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxxx",
+  "---------------------------------",
+  "---------------r-----------------"
 ];
-
 /* Challenge 2
    Add appropriate classes to use as objects in your map.  Choose characters to represent these objects and position them on the map.   In Challenge 5 and 6, you will generate the map using the character representation of the objects you chose to place in the world. Get Creative!
 */
 
-let scene, ufos = [];
+let scene, ufos = [], rockets = [];
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
@@ -68,17 +69,21 @@ window.addEventListener("DOMContentLoaded",function() {
       if(cols[c] == "x"){
         new Wall(c,1,r);
       }
-      else if(cols[c] == "u"){
+      if(cols[c] == "u"){
         let ufo = new UFO(c,7,r);
         ufos.push(ufo);
-
       }
-    }
+      if(cols[c] == "r"){
+        let rocket = new Rocket(c,12.5,r);
+        rockets.push(rocket);
+      }
+    
+  }
     /* Challenge 4
        Make an appropriate decision based on the characters you chose to enter 
        in the maze.  Create an instance of the corresponding object.
     */
-  }
+}
   loop();
 
 })
