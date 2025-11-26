@@ -10,13 +10,14 @@
       <a-sky color="#ECECEC"></a-sky>
       <a-camera> 
         <a-cursor raycaster="objects: [clickable]">
-          <a-text id="time" position="-2 1 -1" value="Time: " color="black"></a-text>
+          <a-text id="time" position="-3 1 -1" value="Time: " color="black"></a-text>
           <!-- Challenge 1
                Add a text component to display the score -->
-
+          <a-text id="score" position="2 1 -1" value="Score: " color="black"></a-text>
           <!-- Challenge 2
                Using <a-image> add the image of gun.png to the HUD
           -->
+                <img src = "gun.png">
         </a-cursor>
       </a-camera>
     </a-scene>
