@@ -5,6 +5,7 @@ class Cloud{
       this.z = z;
 
       this.dx = 0.05;
+
         this.obj = document.createElement("a-entity");
 
         let sphere1 = document.createElement("a-sphere");
@@ -25,8 +26,21 @@ class Cloud{
         sphere3.setAttribute("radius", "1");
         this.obj.append(sphere3);
 
-        this.obj.setAttribute("position", {x:x,y:y,z:z});
-        scene.append(this.obj)
+        this.obj.setAttribute("position", {x:this.x,y:this.y,z:this.z});
+        this.obj.addEventListener("mouseenter", ()=>{
+          this.move = true
+        })
+        this.obj.addEventListener("mouseleave",()=>{
+          this.move = false;
+        })
+        
+      scene.append(this.obj)
   }
   
+      breeze(){
+        if(this.move){
+          this.x += this.dx;
+          this.obj.setAttribute("position", {x:this.x,y:this.y,z:this.z})
+        }
+      }
 }

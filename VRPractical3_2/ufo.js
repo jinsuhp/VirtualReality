@@ -38,18 +38,16 @@ class UFO{
         light.setAttribute("opacity", "0.60");
         this.obj.append(light);
     
-        this.fall = false;
-        this.obj.setAttribute("interact","");
-        this.obj.setAttribute("position", {x:x,y:y,z:z});
-        this.obj.addEventListener("mouseenter",()=>{
-            this.fall = true
-    })
+       this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
+       this.obj.addEventListener("click",()=>{
+            this.fall = true;
+       })
         scene.append(this.obj);
 }
     invade(){
         if(this.fall){
-        this.y -= this.dy;
-        this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
+            this.y -= this.dy;
+            this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
         }
 }
 }
