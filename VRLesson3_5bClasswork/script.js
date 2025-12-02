@@ -7,6 +7,13 @@ window.addEventListener("DOMContentLoaded",function() {
   /* Challenge 1
      Add 10 new PotHole at random locations to the potholes array
   */
+ for(i = 0; i < 10; i++){
+  let x = rnd(-25,25);
+  let z = rnd(-25,25);
+  let pothole = new Pothole(x,z);
+  potholes.push(pothole);
+  }
+ 
   
   setTimeout(loop,100);
 })
@@ -15,7 +22,11 @@ function loop(){
      Go through the potholes array.  If the distance between you and a 
      pothole is less than 1.7, set the camera's drop variable to true. 
   */
-
+ for(let pothole of potholes){
+    if(distance(pothole,camera) < 1.7){
+      camera.drop = true;
+    }
+  }
   if(camera.drop){
     camera.object3D.position.y -= 0.025;
   }

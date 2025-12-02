@@ -32,6 +32,7 @@ function loop(){
   }else if(d2 < 1){
     ball.dx = -ball.dx;
   }
+      
 
   window.requestAnimationFrame(loop);
 }
