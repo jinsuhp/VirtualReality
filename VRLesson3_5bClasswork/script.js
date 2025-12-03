@@ -23,11 +23,11 @@ function loop(){
      pothole is less than 1.7, set the camera's drop variable to true. 
   */
  for(let pothole of potholes){
-    if(distance(pothole,camera) < 1.7){
+    if(distance(pothole.obj,camera) < 1.7){
       camera.drop = true;
     }
   }
-  if(camera.drop){
+    if(camera.drop){
     camera.object3D.position.y -= 0.025;
   }
  
